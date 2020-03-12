@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc22f65b-0a36-498f-8b70-c712a30ad54d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JQLSearcherProjectManager">
+    <selected>-1</selected>
+    <searchers />
+  </component>
+  <component name="JiraServerManager">
+    <servers>
+      <JiraServer password="dff8dfcbdfd0dfc3dfc4dfd3dfcbdfc4dfcedfcfdfd2df92df9c" url="http://dotsolution.atlassian.net" username="razin36986" />
+    </servers>
+  </component>
+  <component name="ProjectId" id="1YtonDk0BMABfWwEaZsUvvZ2BJl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
+    <property name="tasks.open.task.update.state.enabled" value="true" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task id="Default" summary="Default task">
+      <changelist id="fc22f65b-0a36-498f-8b70-c712a30ad54d" name="Default Changelist" comment="" />
+      <created>1583771415389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583848183692</updated>
+    </task>
+    <task active="true" id="ENROLL-22" summary="Распознавание пользователя по фотографии и возврат его user_id">
+      <created>1583794658378</created>
+      <option name="issue" value="true" />
+      <url>http://dotsolution.atlassian.net/browse/ENROLL-22</url>
+      <option name="number" value="22" />
+      <option name="presentableId" value="ENROLL-22" />
+      <option name="project" value="ENROLL" />
+      <updated>1583848183692</updated>
+    </task>
+    <servers>
+      <JIRA url="http://dotsolution.atlassian.net">
+        <option name="apiType" value="REST_2_0" />
+        <option name="inCloud" value="true" />
+        <option name="jiraVersion" value="1001.0.0-SNAPSHOT" />
+        <username>razin36986@gmail.com</username>
+      </JIRA>
+    </servers>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583771447842">
+      <screen x="0" y="0" width="1680" height="995" />
+    </state>
+    <state x="304" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.995@0.0.1680.995" timestamp="1583771447842" />
+    <state x="341" y="136" key="SettingsEditor" timestamp="1583853152745">
+      <screen x="0" y="0" width="1680" height="995" />
+    </state>
+    <state x="341" y="136" key="SettingsEditor/0.0.1680.995@0.0.1680.995" timestamp="1583853152745" />
+    <state x="563" y="402" key="SimpleOpenTaskDialog" timestamp="1583848183737">
+      <screen x="0" y="0" width="1680" height="995" />
+    </state>
+    <state x="563" y="402" key="SimpleOpenTaskDialog/0.0.1680.995@0.0.1680.995" timestamp="1583848183737" />
+    <state x="517" y="330" key="com.intellij.ide.util.TipDialog" timestamp="1583848136117">
+      <screen x="0" y="0" width="1680" height="995" />
+    </state>
+    <state x="517" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.995@0.0.1680.995" timestamp="1583848136117" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
