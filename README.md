@@ -37,3 +37,10 @@ GET /getUserByImage<br/>
 Аргументы:image, groupId<br/>
 Пример конечной ссылки:<br/>
 host/getUserByImage?groupId=ID_группы&image=url_image
+
+### Получение всех групп ###
+GET /groups<br/>
+Аргументы: нет<br/>
+Пример конечной ссылки<br/>
+host/groups
+
