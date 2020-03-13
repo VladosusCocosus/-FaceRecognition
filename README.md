@@ -2,7 +2,7 @@
 ## Настройка для начала роботы: ##
 Устанавливаем azure cognitiveservices vision face - pip install azure-cognitiveservices-vision-face
 
-Открываем файл 'settingApi.py' и меняем ENDPOINT, KEY, headers, ENDPOINT можно и KEY мы получаем в https://portal.azure.com/
+Открываем файл 'settingApi.py' и меняем ENDPOINT, KEY, headers. ENDPOINT можно и KEY получаем в https://portal.azure.com/
 <br/>Пример:
 ![Пример](https://sun3-11.userapi.com/FCRt7AQ_Lg9-I2TzEiYMIrVahne5RaghuG6SpA/RdjQhxN-T9A.jpg)
 
