@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc22f65b-0a36-498f-8b70-c712a30ad54d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requestApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/requestApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +10,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="vladosus &lt;razin36986@gmail.ru&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
@@ -94,6 +94,14 @@
       <option name="project" value="ENROLL" />
       <updated>1583848183692</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit-3">
+      <created>1584814607362</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584814607362</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers>
       <JIRA url="http://dotsolution.atlassian.net">
         <option name="apiType" value="REST_2_0" />
@@ -106,6 +114,10 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-3" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="304" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584811080648">
       <screen x="0" y="0" width="1680" height="995" />
@@ -115,22 +127,26 @@
       <screen x="0" y="0" width="1680" height="995" />
     </state>
     <state x="557" y="307" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.995@0.0.1680.995" timestamp="1584811410185" />
-    <state width="1659" height="269" key="GridCell.Tab.0.bottom" timestamp="1584814250604">
+    <state x="464" y="100" key="CommitChangelistDialog2" timestamp="1584814607141">
       <screen x="0" y="0" width="1680" height="995" />
     </state>
-    <state width="1659" height="269" key="GridCell.Tab.0.bottom/0.0.1680.995@0.0.1680.995" timestamp="1584814250604" />
-    <state width="1659" height="269" key="GridCell.Tab.0.center" timestamp="1584814250603">
+    <state x="464" y="100" key="CommitChangelistDialog2/0.0.1680.995@0.0.1680.995" timestamp="1584814607141" />
+    <state width="1659" height="269" key="GridCell.Tab.0.bottom" timestamp="1584814865135">
       <screen x="0" y="0" width="1680" height="995" />
     </state>
-    <state width="1659" height="269" key="GridCell.Tab.0.center/0.0.1680.995@0.0.1680.995" timestamp="1584814250603" />
-    <state width="1659" height="269" key="GridCell.Tab.0.left" timestamp="1584814250602">
+    <state width="1659" height="269" key="GridCell.Tab.0.bottom/0.0.1680.995@0.0.1680.995" timestamp="1584814865135" />
+    <state width="1659" height="269" key="GridCell.Tab.0.center" timestamp="1584814865134">
       <screen x="0" y="0" width="1680" height="995" />
     </state>
-    <state width="1659" height="269" key="GridCell.Tab.0.left/0.0.1680.995@0.0.1680.995" timestamp="1584814250602" />
-    <state width="1659" height="269" key="GridCell.Tab.0.right" timestamp="1584814250604">
+    <state width="1659" height="269" key="GridCell.Tab.0.center/0.0.1680.995@0.0.1680.995" timestamp="1584814865134" />
+    <state width="1659" height="269" key="GridCell.Tab.0.left" timestamp="1584814865133">
       <screen x="0" y="0" width="1680" height="995" />
     </state>
-    <state width="1659" height="269" key="GridCell.Tab.0.right/0.0.1680.995@0.0.1680.995" timestamp="1584814250604" />
+    <state width="1659" height="269" key="GridCell.Tab.0.left/0.0.1680.995@0.0.1680.995" timestamp="1584814865133" />
+    <state width="1659" height="269" key="GridCell.Tab.0.right" timestamp="1584814865134">
+      <screen x="0" y="0" width="1680" height="995" />
+    </state>
+    <state width="1659" height="269" key="GridCell.Tab.0.right/0.0.1680.995@0.0.1680.995" timestamp="1584814865134" />
     <state x="341" y="136" key="SettingsEditor" timestamp="1583853152745">
       <screen x="0" y="0" width="1680" height="995" />
     </state>
