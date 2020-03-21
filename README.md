@@ -1,10 +1,15 @@
 # -FaceRecognition
+
 ## Настройка для начала роботы: ##
 Устанавливаем azure cognitiveservices vision face - pip install azure-cognitiveservices-vision-face
 
 Открываем файл 'settingApi.py' и меняем ENDPOINT, KEY, headers. ENDPOINT можно и KEY получаем в https://portal.azure.com/
 <br/>Пример:
 ![Пример](https://sun3-11.userapi.com/FCRt7AQ_Lg9-I2TzEiYMIrVahne5RaghuG6SpA/RdjQhxN-T9A.jpg)
+
+## Docker ##
+sudo docker build -t name:v . <br/>
+sudo docker run name:v
 
 ## API ##
 ### Создание новой группы ###
@@ -43,4 +48,5 @@ GET /groups<br/>
 Аргументы: нет<br/>
 Пример конечной ссылки<br/>
 host/groups
+
 
