@@ -8,7 +8,7 @@
 ![Пример](https://sun3-11.userapi.com/FCRt7AQ_Lg9-I2TzEiYMIrVahne5RaghuG6SpA/RdjQhxN-T9A.jpg)
 
 ## Docker ##
-sudo docker build -t name:v .
+sudo docker build -t name:v . <br/>
 sudo docker run name:v
 
 ## API ##
