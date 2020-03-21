@@ -1,19 +1,15 @@
-from app import app
-import asyncio, io, glob, os, sys, time, uuid, requests
-from urllib.parse import urlparse
+import os, requests
 from azure.cognitiveservices.vision.face import FaceClient
 from msrest.authentication import CognitiveServicesCredentials
-from azure.cognitiveservices.vision.face.models import TrainingStatusType, Person, SnapshotObjectType, OperationStatusType
-from flask import redirect, request, url_for
-from flask import jsonify
+
 
 headers = {
-    'Ocp-Apim-Subscription-Key': '16287767a9cc49e2a3367b0225e2d2bd',
+    'Ocp-Apim-Subscription-Key': 'Key',
 }
 
-KEY = os.environ['COGNITIVE_SERVICE_KEY']
+KEY = 'Key'
 
-ENDPOINT = os.environ['COGNITIVE_ENDPOINT_KEY']
+ENDPOINT = 'EndPoint'
 
 
 def detectedFace(image):
@@ -58,7 +54,7 @@ def createPerson(name, userData, personGroupId):
     body = str(body)
 
     #Request URL 
-    FaceApiCreatePerson = 'https://testproj.cognitiveservices.azure.com/face/v1.0/persongroups/'+personGroupId+'/persons' 
+    FaceApiCreatePerson = ENDPOINT+'face/v1.0/persongroups/'+personGroupId+'/persons'
 
     try:
         # REST Call 
@@ -72,7 +68,7 @@ def createPerson(name, userData, personGroupId):
 
 
 def addImageForPerson(personId, personGroupId, imgURL):
-    FaceApiAddFace = 'https://testproj.cognitiveservices.azure.com/face/v1.0/persongroups/'+personGroupId+'/persons/'+personId+'/persistedFaces' 
+    FaceApiAddFace = ENDPOINT+'face/v1.0/persongroups/'+personGroupId+'/persons/'+personId+'/persistedFaces'
 
     body = dict()
     body["url"] = imgURL
@@ -92,7 +88,7 @@ def addImageForPerson(personId, personGroupId, imgURL):
 
 def identifyPerson(image, groupId):
     faceIdsList = detectedFace(image)
-    FaceApiIdentify = 'https://testproj.cognitiveservices.azure.com/face/v1.0/identify'
+    FaceApiIdentify = ENDPOINT+'face/v1.0/identify'
 
     body = dict()
     body["personGroupId"] = groupId
@@ -118,7 +114,7 @@ def trainPersonGroup(groupId):
     body = dict()
 
     #Request URL 
-    FaceApiTrain = 'https://testproj.cognitiveservices.azure.com/face/v1.0/persongroups/'+groupId+'/train'
+    FaceApiTrain = ENDPOINT+'face/v1.0/persongroups/'+groupId+'/train'
 
     try:
         # REST Call 
@@ -130,18 +126,16 @@ def trainPersonGroup(groupId):
 
     
 def getPerson(personId, personGroupId):
-    getPersonApi = 'https://testproj.cognitiveservices.azure.com/face/v1.0/persongroups/'+personGroupId+'/persons/'+personId
+    getPersonApi = ENDPOINT+'face/v1.0/persongroups/'+personGroupId+'/persons/'+personId
     
     try:
         response = requests.get(getPersonApi, headers=headers)
-        responseJson = response.json()
-
     except Exception as e:
         return e
 
 
 def getGroups():
-    getGroupsApi = 'https://testproj.cognitiveservices.azure.com/face/v1.0/persongroups/'
+    getGroupsApi = ENDPOINT+'face/v1.0/persongroups/'
 
     try:
         response = requests.get(getGroupsApi, headers=headers)
@@ -149,5 +143,3 @@ def getGroups():
 
     except Exception as e:
         return e
-    
-    
