@@ -55,10 +55,10 @@ def getUser():
     image = request.args.get('image', type=str, default = None)
     groupId = request.args.get('groupId', type=str, default = None)
     
-    return make_response(jsonify(identifyPerson(image, groupId)), 200)
+    return make_response(jsonify(identifyPerson(image, groupId)))
 
 
-@app.route('/train', methods=['GET'])
+@app.route('/training', methods=['GET'])
 def train():
     groupId = request.args.get('groupId', type=str, default=None)
 

@@ -4,12 +4,12 @@ from msrest.authentication import CognitiveServicesCredentials
 
 
 headers = {
-    'Ocp-Apim-Subscription-Key': 'Key',
+    'Ocp-Apim-Subscription-Key': '16287767a9cc49e2a3367b0225e2d2bd',
 }
 
-KEY = 'Key'
+KEY = '16287767a9cc49e2a3367b0225e2d2bd'
 
-ENDPOINT = 'EndPoint'
+ENDPOINT = 'https://testproj.cognitiveservices.azure.com/'
 
 
 def detectedFace(image):
@@ -96,17 +96,17 @@ def identifyPerson(image, groupId):
     body = str(body)
 
     try:
-        # REST Call 
+        # REST Call
         response = requests.post(FaceApiIdentify, data=body, headers=headers) 
         responseJson = response.json()
+        print(responseJson)
         personId = responseJson[0]["candidates"][0]["personId"]
         confidence = responseJson[0]["candidates"][0]["confidence"]
         
         person = getPerson(personId, groupId)
-        print(person)
         return person
 
-    except Exception as e:
+    except Exception:
         return 'Could not detect'
 
 
@@ -124,12 +124,15 @@ def trainPersonGroup(groupId):
     except Exception as e:
         return e
 
-    
+
 def getPerson(personId, personGroupId):
-    getPersonApi = ENDPOINT+'face/v1.0/persongroups/'+personGroupId+'/persons/'+personId
-    
+    getPersonApi = 'https://testproj.cognitiveservices.azure.com/face/v1.0/persongroups/'+personGroupId+'/persons/'+personId
+
     try:
         response = requests.get(getPersonApi, headers=headers)
+        responseJson = response.json()
+        print(responseJson)
+        return responseJson
     except Exception as e:
         return e
 
