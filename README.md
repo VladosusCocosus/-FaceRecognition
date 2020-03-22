@@ -32,7 +32,7 @@ GET /addFace
 host/addFace?groupId=ID_Группы&personId=Id_пользователя&image=url_image
 
 ### Тренировака распознавания ###
-GET /train<br/>
+GET /training<br/>
 Аргументы:groupId<br/>
 Пример конечной ссылки:<br/>
 host/train?groupId=Id_группы
